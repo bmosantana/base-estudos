@@ -4,7 +4,7 @@ import { TesteComponent } from './teste/teste.component';
 
 @Component({
   selector: 'app-root',
-  imports: [TesteComponent],
+  imports: [TesteComponent], //melhoria: melhorar esses imports com uma shared module
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
