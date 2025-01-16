@@ -30,3 +30,33 @@ const user: User = {
 
 const login = (msg: string) => {}
 login(user.password!); //forçando a tipagem, com o ! dizendo que a propriedade não é undefined
+
+//Unions
+type Author = {
+    books: string[];
+};
+
+const author: Author & User = {
+    age: 10,
+    books: ['A', 'B'],
+    email: 'teste@teste',
+    firstName: 'Teste',
+    lastName: 'aaaaa',
+    order: [{productId: 1, price: 10}],
+};
+
+//Interfaces
+interface IUser {
+    readonly firstName: string; //prop apenas de leitura
+    email: string;
+}
+
+const user2: IUser = {
+    firstName: 'João',
+    email: 'teste@teste'
+}
+
+
+//isso aqui só pode ser usado com types
+type Grade = number | string;
+const grade: Grade = 10;
