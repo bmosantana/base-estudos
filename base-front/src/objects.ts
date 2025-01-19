@@ -12,6 +12,8 @@ type User = {
     //propriedades opcionais não são de fato o tipo declarado, elas não uma intersection, logo seu tipo original vai ser undefined
     password?: string; //com o ? indica que é opcional
     order: Order[];
+    registeredAt?: Date; //opcional
+    
 
     //habit tracker props
     // isConcluedad: boolean;

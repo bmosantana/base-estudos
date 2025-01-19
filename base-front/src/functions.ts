@@ -1,3 +1,11 @@
+interface MathFunc {
+    (x: number, y: number): number;
+}
+
+const sumA: MathFunc = (a: number, b: number): number => { //string | number - pode retornar string ou number [INTERSECTIONS]
+    return a + b;
+} 
+
 const sum = (a: number, b: number): string | number => { //string | number - pode retornar string ou number [INTERSECTIONS]
     return a + b;
 } 
