@@ -21,6 +21,15 @@ class Person {
     }
 }
 
+class Child {
+// Uma outra forma de criar classe sem precisar repetir codigo de definição e do constructor
+    constructor(
+        readonly id: number, //readonly só se altera no construtor da classe
+        protected name: string, //protected só é acessivel dentro da classe ou das subclasses(classes filhas)
+        private age: number
+    ) {}
+}
+
 class Employee extends Person {
     private salary: number;
 
